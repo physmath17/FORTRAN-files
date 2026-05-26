@@ -1,0 +1,23 @@
+!		do r = 1, q
+!			do c = 1, q
+!				if(r==1 .and. c==1) then
+!					E1 = E1 + A(1,1)*(A(q,1) + A(1,q) + A(1,2) + A(2,1))
+!				elseif(r==q .and. c==1) then
+!					E1 = E1 + A(q,1)*(A(1,1) + A(q,2) + A(q-1,1) + A(q,q))
+!				elseif(r==1 .and. c==q) then
+!					E1  = E1 + A(1,q)*(A(1,1) + A(q,q) + A(1,q-1) + A(2,q))
+!				elseif(r==q .and. c==q) then
+!					E1 = E1 + A(q,q)*(A(q,1) + A(1,q) + A(q,q-1) + A(q-1,q))
+!				elseif((r==1 .and. c/=1) .or. (r==1 .and. c/=q)) then
+!					E1 = E1 + A(r,c)*(A(q,c) + A(1,c-1) + A(1,c+1) + A(2,c))
+!				elseif((c==1 .and. r/=1) .or. (c==1 .and. r/=q)) then
+!					E1 = E1 + A(r,c)*(A(r,q) + A(r-1,c) + A(r+1,c) + A(r,2))
+!				elseif((r==q .and. c/=1) .or. (r==q .and. c/=q)) then
+!					E1 = E1 + A(r,c)*(A(1,c) + A(q,c-1) + A(q,c+1) + A(q-1,c))
+!				elseif((c==q .and. r/=1) .or. (c==q .and. r/=q)) then
+!					E1 = E1 + A(r,c)*(A(r,1) + A(r-1,q) + A(r+1,q) + A(r,q-1))
+!				elseif((r/=1 .and. c/=1) .or. (r/=q .and. c/=1) .or. (r/=1 .and. c/=q) .or. (r/=q .and. c/=q)) then
+!					E1 = E1 + A(r,c)*(A(r,c+1) + A(r,c-1) + A(r+1,c) + A(r-1,c))
+!				endif
+!			enddo
+!		enddo

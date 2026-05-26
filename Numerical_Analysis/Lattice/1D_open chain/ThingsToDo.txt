@@ -1,0 +1,4 @@
+1. Diffusion coefficient
+2. Avg time vs Length
+
+t = 2*D*x0*(l - x0)
